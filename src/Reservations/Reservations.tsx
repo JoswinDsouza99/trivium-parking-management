@@ -34,9 +34,10 @@ const Reservation = () => {
         </thead>
         <tbody>
           {employee.map((index) => (
-            <tr key={index.epmID}>
+            <tr key={index.empID}>
+              <td>{index.empID}</td>
               <td>{index.name}</td>
-              <td>{index.vehicleNo}</td>
+              <td>{index.vehicle_No}</td>
               <td>
                 <button>Delete</button>
               </td>
@@ -48,4 +49,4 @@ const Reservation = () => {
     );
 }
 
-export default Reservation();
+export default Reservation;

@@ -27,24 +27,25 @@ const Login = () => {
 
   return (
     <>
-    <Navbar className="bg-body-tertiary">
+    <Navbar>
     <Container>
-      <Navbar.Brand href="#home">Trivium Parking Management</Navbar.Brand>
+      <Navbar.Brand href="#home" className='navBarText'>Trivium Parking Management</Navbar.Brand>
       </Container>
       </Navbar>
     <Form className="centerForm">
       <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label>Employee Code</Form.Label>
-        <Form.Control type="email" placeholder="Enter emp code" value={empID} onChange={(e) => setEmpID(e.target.value)}/>
+        <Form.Label className='labelText'>Employee Code</Form.Label>
+        <Form.Control placeholder="Enter emp code" className='labelText' value={empID} onChange={(e) => setEmpID(e.target.value)}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <Form.Label className='labelText'>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" className='labelText' value={password} onChange={(e) => setPassword(e.target.value)}/>
       </Form.Group>
       <Button variant="primary" type="submit" onClick={handleLogin}>
         Submit
       </Button>
     </Form>
+    <img src='parking' alt="react logo" />
     </>
   );
 }

@@ -1,16 +1,29 @@
 import { Container, Navbar } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
+import { useNavigate } from "react-router";
+
 
 
 const NavBar = () => {
+
+  const navigate = useNavigate();
+
+  function handleReservation() {
+    navigate("/reservation/")
+  }
+
+  function handleHome() {
+    navigate("/dashboard/")
+  }
+
     return (
     <Navbar className="bg-body-tertiary">
     <Container>
-      <Navbar.Brand href="#home">Trivium Parking Management</Navbar.Brand>
+      <Navbar.Brand onClick={handleHome}>Trivium Parking Management</Navbar.Brand>
       <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link onClick={handleHome}>Home</Nav.Link>
       <Nav.Link href="#booking">Booking</Nav.Link>
-      <Nav.Link href="#reservations">Reservations</Nav.Link>
+      <Nav.Link onClick={handleReservation}>Reservations</Nav.Link>
       </Nav>
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">

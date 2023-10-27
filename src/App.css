@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #37075D;
 }
 
 .App-logo {
@@ -32,14 +33,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 .centerForm {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 130px;
+  display: flex;
+  align-items: center;
+  margin-top: 130px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 156px;
+}
+
+.textbox {
+  background-color: #D644C0;
+}
+
+.mainDiv {
+  background-color: #37075D;
+  height: 100vh;
+}
+
+.navBarText {
+  color: #D644C0 !important;
+}
+
+.labelText {
+  color: #D644C0;
 }

@@ -1,5 +1,5 @@
 export interface Employee {
-    epmID: string;
+    empID: string;
     name: string;
-    vehicleNo: string;
+    vehicle_No: string;
 }
