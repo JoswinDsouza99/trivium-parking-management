@@ -17,7 +17,7 @@ const NavBar = () => {
   }
 
     return (
-    <Navbar className="bg-body-tertiary">
+    <Navbar>
     <Container>
       <Navbar.Brand onClick={handleHome}>Trivium Parking Management</Navbar.Brand>
       <Nav className="me-auto">

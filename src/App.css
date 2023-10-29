@@ -54,14 +54,27 @@
 }
 
 .mainDiv {
-  background-color: #37075D;
+  background-image: linear-gradient( bottom, #37075D, #3D075F);
+  background-image: linear-gradient(180deg, #37075D, #3D075F);
   height: 100vh;
 }
 
 .navBarText {
   color: #D644C0 !important;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .labelText {
   color: #D644C0;
+}
+
+.loginImg {
+  height: 680px;
+  width: 750px;
+  position: absolute;
+  bottom: 0;
+}
+
+.loginSubmit {
+  background-color: #1FA4CD !important;
 }

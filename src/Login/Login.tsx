@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Button, Container, Navbar } from 'react-bootstrap';
+import { Button, Col, Container, Navbar, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import loginLogo from '../imgs/parking.jpg'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -32,20 +33,28 @@ const Login = () => {
       <Navbar.Brand href="#home" className='navBarText'>Trivium Parking Management</Navbar.Brand>
       </Container>
       </Navbar>
-    <Form className="centerForm">
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label className='labelText'>Employee Code</Form.Label>
-        <Form.Control placeholder="Enter emp code" className='labelText' value={empID} onChange={(e) => setEmpID(e.target.value)}/>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label className='labelText'>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" className='labelText' value={password} onChange={(e) => setPassword(e.target.value)}/>
-      </Form.Group>
-      <Button variant="primary" type="submit" onClick={handleLogin}>
-        Submit
-      </Button>
-    </Form>
-    <img src='parking' alt="react logo" />
+    <Container>
+      <Row>
+        <Col>
+        <Form className="centerForm">
+          <Form.Group className="mb-3" controlId="formGroupEmail">
+            <Form.Label className='labelText'>Employee Code</Form.Label>
+            <Form.Control placeholder="Enter emp code" className='labelText' value={empID} onChange={(e) => setEmpID(e.target.value)}/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPassword">
+            <Form.Label className='labelText'>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" className='labelText' value={password} onChange={(e) => setPassword(e.target.value)}/>
+          </Form.Group>
+          <Button className='loginSubmit' variant="primary" type="submit" onClick={handleLogin}>
+            Submit
+          </Button>
+        </Form>
+        </Col>
+        <Col>
+        <img className='loginImg' src={loginLogo} alt="login logo" />
+        </Col>
+      </Row>
+    </Container>
     </>
   );
 }
