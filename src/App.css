@@ -42,7 +42,7 @@
 .centerForm {
   display: flex;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 30%;
   align-content: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
@@ -54,14 +54,14 @@
 }
 
 .mainDiv {
-  background-image: linear-gradient( bottom, #37075D, #3D075F);
+  background-image: linear-gradient(bottom, #37075D, #3D075F);
   background-image: linear-gradient(180deg, #37075D, #3D075F);
   height: 100vh;
 }
 
 .navBarText {
   color: #D644C0 !important;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .labelText {
@@ -69,12 +69,29 @@
 }
 
 .loginImg {
-  height: 680px;
-  width: 750px;
+  height: 100%;
+  width: 50%;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 
 .loginSubmit {
   background-color: #1FA4CD !important;
+}
+
+.dashboardContainer {
+  text-align: center;
+  margin-top: 15%;
+  color: #D644C0;
+}
+
+.dashboardRow {
+  font-size: 90px;
+  font-family: fantasy;
+}
+
+.countText {
+  font-size: 70px;
+  font-family: system-ui;
 }
