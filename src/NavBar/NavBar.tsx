@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
     <Navbar>
     <Container>
-      <Navbar.Brand onClick={handleHome}>Trivium Parking Management</Navbar.Brand>
+      <Navbar.Brand onClick={handleHome} className='navBarText'>Trivium Parking Management</Navbar.Brand>
       <Nav className="me-auto">
       <Nav.Link onClick={handleHome}>Home</Nav.Link>
       <Nav.Link href="#booking">Booking</Nav.Link>
